@@ -1,0 +1,20 @@
+{
+  "name": "bbycaSRE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bestbuy.ca.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmasaya/bbproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmasaya/bbproject/issues"
+  },
+  "homepage": "https://github.com/lmasaya/bbproject#readme"
+}
