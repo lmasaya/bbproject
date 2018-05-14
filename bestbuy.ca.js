@@ -18,16 +18,16 @@ app.set('port', process.env.PORT || 8000);
 
 switch (process.env.ENV){
    case 'DEV': 
-	msg = 'Unleash the power of our people'
+	msg = 'Unleash the power of our people 1'
 	break;
    case 'TEST':
-	msg = 'Show respect, humility and integrity'
+	msg = 'Show respect, humility and integrity 2'
 	break;
    case 'DR':
-	msg = 'Learn from challenge and change'
+	msg = 'Learn from challenge and change 3'
         break;
    case 'PROD':
-	msg = 'Have fun while being the best'
+	msg = 'Have fun while being the best 4'
 	break;
     default:
 	msg = 'Environment not defined'
