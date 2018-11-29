@@ -10,25 +10,29 @@ var ejs = require('ejs');
 
 app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'ejs'); 
+app.set('view engine', 'ejs');
 
 var routes = require('./routes/routes.js');
 
 app.set('port', process.env.PORT || 8000);
 
 switch (process.env.ENV){
-   case 'DEV': 
+   case 'DEV':
 	msg = 'Unleash the power of our people 1'
 	break;
+
    case 'TEST':
 	msg = 'Show respect, humility and integrity 2'
 	break;
+
    case 'DR':
 	msg = 'Learn from challenge and change 3'
         break;
+
    case 'PROD':
 	msg = 'Have fun while being the best 4'
 	break;
+
     default:
 	msg = 'Environment not defined'
 }
@@ -36,8 +40,7 @@ switch (process.env.ENV){
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
-  	
+
 	  res.render(__dirname + '/views/index.html', {msg: msg});
 
 }).listen(app.get('port'));
-
